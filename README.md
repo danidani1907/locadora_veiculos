@@ -8,5 +8,5 @@ contem:
 - tela de login
 - perfil do ADM
 - Cadastro e login de clientes
-- aluguel para os clintes
+- aluguel para os clientes
 - Processos simplificados de reserva e devolução de veículos para admins
