@@ -98,7 +98,7 @@
                                         <td>Carro</td>
                                         <td>
                                         <div class="container mt-3">
-            <button class="btn btn" data-bs-toggle="modal" 
+            <button class="btn btn-success" data-bs-toggle="modal" 
              data-bs-target="#exemploModal">
                 Uno
             </button>
@@ -126,9 +126,45 @@ Fiat Attractive 1.0 Evo Fire Flex 8v 5p</h4>
                                         </td>
                                         <td>ABC1D34</td>
                                         <td>
-                                            <span class="badge bg-success">
-                                                Disponível ✅
-                                            </span>
+                                        <button class="btn btn-success" data-bs-toggle="modal" class="nav-link active" data-bs-target="#contatoModal">disponivel</button>
+                                        <div class="modal fade" id="contatoModal">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title">disponivel para aluguel</h5>
+                                                        <button type="button" class="btn-close"  data-bs-dismiss="modal"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form>
+                                                            <div class="mb-3">
+                                                                <label for="nome" class="form-label">Nome:</label>
+                                                                <input type="text" class="form-control" id="nome" required>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                            <label for="rgContato" class="form-label">rg:</label>
+                                                            <input type="text" class="form-control" id="rgContato" required>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="emailContato" class="form-label">Email</label>
+                                                                <input type="email" class="form-control" id="emailContato" required>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="inputPassword5" class="form-label">Senha:</label>
+                                                                <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" required>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="diasAluguel" class="form-label">Dias de aluguel:</label>
+                                                                <input type="number" name="dias" class="form-control days-input" value="1" min="1" required>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                                        <button type="submit" class="btn btn-info">Enviar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                         </td>
                                         
                                             
@@ -138,7 +174,7 @@ Fiat Attractive 1.0 Evo Fire Flex 8v 5p</h4>
                                                     <tr>
                                         <td>moto</td>
                                         <td> 
-                                        <button class="btn btn" data-bs-toggle="modal" data-bs-target="#informacoes">Honda</button>
+                                        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#informacoes">Honda</button>
                                         <div class="modal fade" id="informacoes">
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
@@ -162,12 +198,12 @@ Fiat Attractive 1.0 Evo Fire Flex 8v 5p</h4>
                                         <td>CFC889</td>
                                         <td>
                                            
-                                                <button class="btn btn-info" data-bs-toggle="modal" class="nav-link active" data-bs-target="#contatoModal">Alugue</button>
+                                                <button class="btn btn-success" data-bs-toggle="modal" class="nav-link active" data-bs-target="#contatoModal">disponivel</button>
                                         <div class="modal fade" id="contatoModal">
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
-                                                        <h5 class="modal-title">disponivel</h5>
+                                                        <h5 class="modal-title">disponivel para aluguel</h5>
                                                         <button type="button" class="btn-close"  data-bs-dismiss="modal"></button>
                                                     </div>
                                                     <div class="modal-body">
@@ -177,8 +213,8 @@ Fiat Attractive 1.0 Evo Fire Flex 8v 5p</h4>
                                                                 <input type="text" class="form-control" id="nome" required>
                                                             </div>
                                                             <div class="mb-3">
-                                                            <label for="cpfContato" class="form-label">CPF:</label>
-                                                            <input type="text" class="form-control" id="cpfContato" required>
+                                                            <label for="rgContato" class="form-label">rg:</label>
+                                                            <input type="text" class="form-control" id="rgContato" required>
                                                             </div>
                                                             <div class="mb-3">
                                                                 <label for="emailContato" class="form-label">Email</label>
