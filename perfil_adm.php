@@ -106,6 +106,10 @@
                                 </label>
                                 <input type="number" name="dias_calculo" class="form-control"
                                 value="1" required>
+                                <br>
+                                <button class="btn btn-success w-100" type="submit" name="adicionar">
+                            calcular preço
+                        </button>
 
                             </div>
                         </form>
