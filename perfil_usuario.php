@@ -96,27 +96,113 @@
                                 <tbody>
                                     <tr>
                                         <td>Carro</td>
-                                        <td>Uno</td>
+                                        <td>
+                                        <div class="container mt-3">
+            <button class="btn btn" data-bs-toggle="modal" 
+             data-bs-target="#exemploModal">
+                Uno
+            </button>
+        </div>
+        <div class="modal fade" id="exemploModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-tittle">Fiat uno</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h4>
+Modelo:
+Fiat Attractive 1.0 Evo Fire Flex 8v 5p</h4>
+                        <p>Quilometragem :85612</p>
+                        <p>ano :2021</p>
+                    </div>
+                    
+                    </div>
+                </div>
+            </div>
+         </div> <!-- O id tem que ser o mesmo do botão-->
+    
+                                        </td>
                                         <td>ABC1D34</td>
                                         <td>
                                             <span class="badge bg-success">
                                                 Disponível ✅
                                             </span>
                                         </td>
-                                        <td>
-                                            <div class="action-wrapper">
-                                                <form action="post" class="btn-group-actions">
-
+                                        
+                                            
                                                     
                                                     </div>
 
                                                     <tr>
                                         <td>moto</td>
-                                        <td>Honda</td>
+                                        <td> 
+                                        <button class="btn btn" data-bs-toggle="modal" data-bs-target="#informacoes">Honda</button>
+                                        <div class="modal fade" id="informacoes">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h4 class="modal-title">honda</h4>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                    <h4> Modelo: Chrysler</h4>
+                        <p>Quilometragem :85612</p>
+                        <p>ano :2021</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                                        <button class="btn btn-primary">Salvar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </td>
                                         <td>CFC889</td>
                                         <td>
-                                            <span class="badge bg-success">
-                                                Disponível ✅
+                                           
+                                                <button class="btn btn-info" data-bs-toggle="modal" class="nav-link active" data-bs-target="#contatoModal">Alugue</button>
+                                        <div class="modal fade" id="contatoModal">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title">disponivel</h5>
+                                                        <button type="button" class="btn-close"  data-bs-dismiss="modal"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form>
+                                                            <div class="mb-3">
+                                                                <label for="nome" class="form-label">Nome:</label>
+                                                                <input type="text" class="form-control" id="nome" required>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                            <label for="cpfContato" class="form-label">CPF:</label>
+                                                            <input type="text" class="form-control" id="cpfContato" required>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="emailContato" class="form-label">Email</label>
+                                                                <input type="email" class="form-control" id="emailContato" required>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="inputPassword5" class="form-label">Senha:</label>
+                                                                <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" required>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="diasAluguel" class="form-label">Dias de aluguel:</label>
+                                                                <input type="number" name="dias" class="form-control days-input" value="1" min="1" required>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                                        <button type="submit" class="btn btn-info">Enviar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+
                                             </span>
                                         </td>
                                         <td>
@@ -169,6 +255,6 @@
 
 
     </div>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
